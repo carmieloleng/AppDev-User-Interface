@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background" >
+
+    <ImageView
+        android:id="@+id/top_layout"
+        android:src="@drawable/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:alpha="10"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="40sp"
+        android:layout_height="50sp"
+        android:src="@drawable/baseline_arrowback"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:src="@drawable/baseline_bookmark_border"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="50sp"
+        android:layout_width="90sp"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:layout_width=""
+        android:layout_height=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/backButton"
+        android:text="Archive"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        tools:ignore="HardcodedText" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
